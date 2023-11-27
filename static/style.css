@@ -1,0 +1,6 @@
+body {
+    background-size: cover; /* Đảm bảo hình ảnh được hiển thị đầy đủ bên trong phạm vi nền */
+    background-repeat: no-repeat; /* Ngăn lặp lại hình ảnh nền */
+    background-attachment: fixed; /* Giữ hình ảnh nền cố định trong khung trình duyệt */
+    /* Các thuộc tính khác để điều chỉnh vị trí và các hiệu ứng khác */
+}
