@@ -1,0 +1,13 @@
+pandas 
+numpy
+plotly
+emoji 
+transformers[torch]
+torch_optimizer
+Flask
+requests
+
+# datasets 
+# evaluate 
+# tensorflow
+# python-dotenv

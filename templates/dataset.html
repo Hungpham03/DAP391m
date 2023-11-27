@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emotion Count Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #191D88;
+        }
+        
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #FFC436;
+        }
+
+        .welcome-message h2 {
+            font-size: 36px;
+            font-weight: 800;
+            color: #FFC436;
+        }
+        
+        .row {
+            color: #fff;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .plot {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dataset">Dataset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./emotion_classification">Emotion Classification</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="welcome-message">
+            <h2>Introduction to UIT-VSMEC</P></h2>
+        </div>
+        <div class="row">
+            <p>The <a href="https://metatext.io/datasets/vietnamese-social-media-emotion-corpus-(uit-vsmec)">UIT-VSMEC dataset</a> is a collection of text data created by the University of Information Technology for sentiment analysis and emotion recognition tasks in the Vietnamese language. It includes 6927 human-annotated text samples with 7 emotion labels from social media and online forums, providing a valuable resource for training and evaluating NLP models in Vietnamese.</p>
+        </div>        
+        <div class="welcome-message">
+            <h2>Here is the visualization of the dataset</P></h2>
+        </div>
+        <div class="row justify-content-center plot">
+            <div class="col-lg-8">
+                {{ plot | safe }}
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
