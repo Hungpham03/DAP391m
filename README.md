@@ -1,5 +1,5 @@
 # Textual Emotion Classification
-This is a subject project that I and my teammate did.
+This is a subject project that I and my teammates did.
 
 # Create a python environment and install dependencies
 python -m venv .venv
